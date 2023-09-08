@@ -20,3 +20,16 @@ while True:
     attempt += 1
 
 print("User guessed the number in", attempt, "attempts.")
+
+# output:
+# Guess the number (between 3 and 9):5
+# Low
+# Guess the number (between 3 and 9):8
+# High
+# Guess the number (between 3 and 9):6
+# Low
+# Guess the number (between 3 and 9):7
+# Congratulations! You guessed the number correctly.
+# User guessed the number in 3 attempts.
+# logesh@Logeshs-MacBook-Pro python_workspace % 
+
