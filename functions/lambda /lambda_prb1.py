@@ -11,15 +11,15 @@ choice = input("Sort by 'name' or 'cost': ")
 
 if choice == "name":
     sorted_list = sorted(input_list, key=lambda x: x[0])  # Sort by fruit name using lambda function
-    output = [item[0] for item in sorted_list]      # get names using for loop
+    # output = [item[0] for item in sorted_list]      # get names using for loop
 elif choice == "cost":
     sorted_list = sorted(input_list, key=lambda x: x[1])  # Sort by cost using lambda
-    output = [item[1] for item in sorted_list]      # get costs using for loop
+    # output = [item[1] for item in sorted_list]      # get costs using for loop
 else:
     print("Invalid choice!")
-    output = input_list # print the input if it is invalid choice
+    sorted_list = input_list # print the input if it is invalid choice
   
-print(output)
+print(sorted_list)
 
 # output:
 

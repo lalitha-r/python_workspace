@@ -1,0 +1,25 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch("/api/todos")
+      .then((response) => response.json())
+      .then((data) => displayTodos(data));
+  });
+
+  function displayTodos(todos) {
+    const list = document.querySelector("#todo-list");
+    todos.forEach((todo) => {
+      const item = document.createElement("li");
+      item.textContent = todo.task;
+      item.className = todo.completed ? "completed" : "pending";
+      list.appendChild(item);
+    });
+  }
+</script>
+
+<body>
+  <ul id="todo-list"></ul>
+</body>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>

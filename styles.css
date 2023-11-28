@@ -1,0 +1,9 @@
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.pending {
+  font-weight: bold;
+  color: blue;
+}

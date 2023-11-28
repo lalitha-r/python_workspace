@@ -14,7 +14,7 @@ for item, details in menu.items():
 order_count = 0
 
 # get input from customer using while
-while order_count < 1:
+while order_count < 2:
     user_input = input(f"Enter input {order_count + 1} of 10: ")
     quantity = re.findall(r'\d+', user_input)
     items = re.findall(r'\b(vadai|tea|coffee)\b', user_input.lower())
@@ -39,3 +39,5 @@ while order_count < 1:
 # print the profit for each item
 for item, details in menu.items():
     print(f"Profit for {item} is {details['profit'] * details['items_sold']}")
+
+print(menu)

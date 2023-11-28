@@ -22,9 +22,7 @@ for i in range(1, 4):
             print(f"{i} * {j} = {i*j}")
     else:
         print("Invalid choice")
-    
-                                                                                                                                                                                                           [l m,kivpbk,o
-                                                                                                                                                                                                             ,print(f"*"*10)
+    print(f"*"*10)
 
 # Print end of tables
 print("End of tables")

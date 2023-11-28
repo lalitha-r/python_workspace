@@ -38,3 +38,17 @@ for month, phoneCount in enumerate(monthlySalesList):  # The enumerate function 
     print(f"Monthly salary of a salesman for month {month + 1}: {previousMonthSalary}")
 
 print(f"Final base salary after cumulative bonus increase: {basePay}")
+
+
+# Monthly salary of a salesman for month 1: 15000
+# Monthly salary of a salesman for month 2: 49800
+# Monthly salary of a salesman for month 3: 52600
+# Monthly salary of a salesman for month 4: 29900
+# Monthly salary of a salesman for month 5: 55300.0
+# Monthly salary of a salesman for month 6: 28725.0
+# Monthly salary of a salesman for month 7: 11576.25
+# Monthly salary of a salesman for month 8: 29855.0625
+# Monthly salary of a salesman for month 9: 56462.815625
+# Monthly salary of a salesman for month 10: 57100.95640625
+# Monthly salary of a salesman for month 11: 80971.0042265625
+# Monthly salary of a salesman for month 12: 32474.554437890627

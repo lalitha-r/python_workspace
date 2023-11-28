@@ -17,7 +17,7 @@ while True:
     order_details = []
 
     # Split the customer input into words
-    words = customer_input.split()
+    words = customer_input .split()
 
     for word in words:
         if word.isdigit() and 0 < int(word) <= 9: #check whether number found in input
