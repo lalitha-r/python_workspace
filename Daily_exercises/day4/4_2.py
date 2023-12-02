@@ -71,21 +71,28 @@ board = game_board()
 scores = {'A': 0, 'B': 0}
 
 # Main game loop
-while True:
-    # Player A's turn
-    print("Player A's turn:")
-    play_game('A')
 
-    # Check if Player A has reached 5 points and declare a winner
-    if scores['A'] == 5:
-        print("Player A wins!")
-        break
 
-    # Player B's turn
-    print("Player B's turn:")
-    play_game('B')
+def main():
+    while True:
+        # Player A's turn
+        print("Player A's turn:")
+        play_game('A')
 
-    # Check if Player B has reached 5 points and declare a winner
-    if scores['B'] == 5:
-        print("Player B wins!")
-        break
+        # Check if Player A has reached 5 points and declare a winner
+        if scores['A'] == 5:
+            print("Player A wins!")
+            break
+
+        # Player B's turn
+        print("Player B's turn:")
+        play_game('B')
+
+        # Check if Player B has reached 5 points and declare a winner
+        if scores['B'] == 5:
+            print("Player B wins!")
+            break
+
+
+if __name__ == "__main__":
+    main()
