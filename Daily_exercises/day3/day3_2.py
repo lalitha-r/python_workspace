@@ -36,8 +36,8 @@ try:
                 count += 1
 
     print(f"'a' is not present between 'the' {count} times.")
-except Exception as e:
-    print(f"An error occurred: {e}")
+except FileNotFoundError:
+    print(f"file does not exit")
 
 # output:
-# 'a' is not present between 'the' 4 times.
+# 'a' is not present between 'the' 3 times.
