@@ -10,6 +10,7 @@
 # Print the board each time after the user rolls and also print the current score.
 # Use functions
 import random
+global board
 
 
 def game_board():  # function to generate the board
@@ -27,6 +28,12 @@ def game_board():  # function to generate the board
     return board
 
 
+def print_board():
+    for row in board:
+        print(' '.join(row))
+        print()
+
+
 def roll_dice():  # roll dice to generate a random digit between 1 and 6
     return random.randint(1, 6)
 
@@ -41,9 +48,10 @@ def play_game():  # game logic
     while True:
 
         # print the board with spacing
-        for row in board:
-            print(' '.join(row))
-        print()
+        # for row in board:
+        #     print(' '.join(row))
+        # print()
+        print_board()
 
         print(f"current score-player A:{score_A}, player B:{score_B}")
         input("player A's turn: press enter to roll the dice twice")
@@ -59,12 +67,11 @@ def play_game():  # game logic
                 board[row_A - 1][col_A - 1] = 'A'
 
             if score_A >= 5:
+                print_board(board)
                 print("player A wins")
                 return
 
-        for row in board:
-            print(' '.join(row))
-        print()
+        print_board(board)
 
         print(f"current score-player A:{score_A}, player B:{score_B}")
         input("player B's turn: press enter to roll the dice twice")
@@ -79,8 +86,10 @@ def play_game():  # game logic
                 board[row_B - 1][col_B - 1] = 'B'
 
             if score_B >= 5:
+                print_board(board)
                 print("player B wins")
                 return
+        print_board(board)
 
 
 play_game()

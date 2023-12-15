@@ -16,3 +16,12 @@ def reverse_order(passage):
 input_passage = input("enter the passage:")
 output_passage = reverse_order(input_passage)
 print(f"the reversed passage is {output_passage}")
+
+
+def add_comma(passage):
+    words = passage.split()
+    output = ""
+    for word in words:
+        output += word + ',' + " "
+
+    return output.strip()
